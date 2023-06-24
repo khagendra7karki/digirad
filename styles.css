@@ -1,21 +1,26 @@
-nav{
-    background-color: #d8b4b4;
+*{
+  font-family: roboto;
+  color: white;
+  background: black;
 }
 .cool-button {
-    display: inline-block;
-    padding: 10px 20px;
-    color: #fff;
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-
-  .cool-button:hover {
-    background-color: #be7c7c;
-  }
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+a.nav-link{
+  color: #fff !important;
+  font-weight: bold;
+}
+.cool-button:hover, .active {
+  background-color: red;
+}
 
     .footer {
     background-color: black;
@@ -58,7 +63,6 @@ nav{
   font-size: 24px;
 }
   .company-background {
-    background-color: #f9f9f9;
     padding: 20px;
     border-radius: 5px;
   }
@@ -70,25 +74,7 @@ nav{
   .company-background p {
     line-height: 1.5;
   }
-.active{
-    background-color: #be7c7c;
-}
 
-.facebook {
-  background-color: #3b5998;
-}
-
-.twitter {
-  background-color: #1da1f2;
-}
-
-.instagram {
-  background-color: #e4405f;
-}
-
-.reddit {
-  background-color: #ff4500;
-}
 
 .logo{
   height: 72px;
@@ -96,36 +82,65 @@ nav{
 }
 
 /* stylesheet for image gallery */
-div.gallery {
-  margin: 5px;
-  height: 200px;
-  overflow: hidden;
+.gallery-wraper{
+  columns: 4 300px;
+  column-gap: 1.5rem;
 }
 
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
+div.gallery-item{
+  display: inline-block;
+  transition: all .25s ease-in-out;
+  padding: 5px;
   width: 100%;
-
+  border-radius: 5px;
+  overflow: hidden;
+  border: 2px solid black;
+  box-shadow: 5px 5px 5px rgba( 0, 0, 0, 0.5);  
 }
-
-div.desc {
-  padding: 15px;
+.gallery-wraper p{
   text-align: center;
 }
+
+div.gallery-item:hover{
+  border-color: red;
+}
+
+div.gallery-item:hover > img{
+  filter: grayscale( 0);
+}
+div.gallery-item > img{
+  width: 100%;
+  filter: grayscale( 100% );
+}
+
+
+
 /* styles for audio player */
 .audio-player-body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background: linear-gradient(44deg, #e91e63, #fffde7);
+    background: #960018;
+}
+.player{
+  background-color: #960018;
+}
+#audio-player{
+  background-color: #960018;
+  margin: 0;
+  padding: 0;
+}
+.audio-inner-wraper{
+  background: #960018;
+}
+
+.audio-inner-wraper h1{
+  background-color: #960018;
 }
 
 .player {
     position: relative;
+    background: #960018;
     width: 350px;
     background: #f1f3f4;
     box-shadow: 0 50px 80px rgba(0, 0, 0, 0.25);
@@ -138,9 +153,6 @@ div.desc {
 }
 
 .player .imgbx img {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
