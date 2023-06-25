@@ -5,67 +5,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DigiRad</title>
     <link rel = 'icon' type = 'image' href = 'digirad1.png'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel = 'stylesheet' href = 'styles.css'>
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
     <!-- make a navigation bar -->
     <header>
-        <nav class = 'navigation-bar navbar navbar-expand-md navbar-light p-0'>
-            <a class = 'navbar-brand p-0' href = '#'>
-                <img src = 'digirad1.png' class = 'logo ml-5'>
-            </a>
-            <button class = 'navbar-toggler' type = 'button' data-toggle="collapse" data-target="#navbarContent">
-                <span class = 'navbar-toggler-icon'></span>
-            </button>
-            <div class="collapse navbar-collapse" id  = 'navbarContent'>
-                <ul class = 'navbar-nav ml-auto'>
-                    <li class = 'nav-item cool-button p-3'><a href = 'index.html'  class = 'nav-link text-primary'>Home</a></li>
-                    <li class = 'nav-item cool-button p-3 active'><a href = '#'  class = 'nav-link text-primary'>About Us</a></li>
-                    <li class = 'nav-item cool-button p-3'><a  href = 'gallery.html' class = 'nav-link text-primary'>Gallery</a></li>
-                    <li class = 'nav-item cool-button p-3'><a href = 'shows.html'  class = 'nav-link text-primary'>Shows</a></li>
-                    <li class = 'nav-item cool-button p-3'><a href = '#'  class = 'nav-link text-primary'>Contact</a></li>
-                </ul>
-            </div>
+      <div class="container">
+        <nav class="navigation-bar navbar navbar-expand-md navbar-dark p-0">
+          <a class="navbar-brand p-0 m-0" href="/">
+            <img src="digirad1.png" class="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarContent"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="py-0 nav-item ">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="py-0 nav-item  active">
+                <a href="about.html" class="nav-link">About Us</a>
+              </li>
+              <li class="py-0 nav-item ">
+                <a href="gallery.html" class="nav-link">Gallery</a>
+              </li>
+              <li class="py-0 nav-item ">
+                <a href="shows.html" class="nav-link">Shows</a>
+              </li>
+              <li class="py-0 nav-item ">
+                <a href="contact.html" class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </div>
         </nav>
+      </div>
     </header>
     <main>
-        <div class="company-background">
-            <h2>Company Background</h2>
-            <p>Digital Radio Plus has been operating for 20 years, broadcasting channels using the highly popular DAB+ transmission technology. The company started as a small radio studio, operating in regional Australia. Over the years, the radio studio has passed through a number of transformations.</p>
-            <p>As the reputation of the studio grew nationally, and production expanded to meet the popular demand, the structure of the business changed to its present form. The production staff increased and currently includes 3 production managers (programme controllers), 30 full-time staff including composers, editors, journalists, presenters, and sound engineers.</p>
-        </div>
-
-        <div class="company-background">
-            <h2>Transmission Technologies</h2>
-            <p>DAB+ is the most widely adopted digital radio standard worldwide, on-air in more than 40 countries including Australia. DAB+ uses an advanced and technically robust transmission system and operates in Australia in VHF Band III. Like other digital technologies, it uses higher frequencies which work extremely well within the coverage area but have a "cliff edge" drop off at the boundary of reception.</p>
-            <p>DAB+ is both a cost-effective and spectrum-efficient technology, allowing broadcasters to offer their popular analogue stations simulcast in digital quality, and significant choice from new DAB+ only station formats such as kids, dance, sport, urban, hard and heavy, chill, and smooth. DAB+ uses a robust modulation designed for radio reception in mobile environments, such as vehicles and public transport.</p>
+        <div class="container">
+            <div class="company-background py-5">
+                <h2 class = 'text-center pb-5'>
+                    <strong>COMPANY BACKGROUND</strong>
+                </h2>
+                <p>Digital Radio Plus has been operating for 20 years, broadcasting channels using the highly popular DAB+ transmission technology.<br><br> The company started as a small radio studio, operating in regional Australia. Over the years, the radio studio has passed through a number of transformations.</p>
+                <p>As the reputation of the studio grew nationally, and production expanded to meet the popular demand, the structure of the business changed to its present form.<br><br> The production staff increased and currently includes 3 production managers (programme controllers), 30 full-time staff including composers, editors, journalists, presenters, and sound engineers.</p>
+            </div>
+    
+            <div class="company-background pb-5">
+                <h2 class="text-center py-5">
+                    <strong>TRANSMISSION TECHNOLOGY</strong></h2>
+                <p>DAB+ is the most widely adopted digital radio standard worldwide, <strong>on-air in more than 40 countries</strong> including Australia.<br><br> DAB+ uses an advanced and technically robust transmission system and operates in Australia in VHF Band III.<br><br> Like other digital technologies, it uses higher frequencies which work extremely well within the coverage area but have a "cliff edge" drop off at the boundary of reception.</p>
+                <p>DAB+ is both a cost-effective and spectrum-efficient technology, allowing broadcasters to offer their popular analogue stations simulcast in digital quality, and significant choice from new DAB+ only station formats such as kids, dance, sport, urban, hard and heavy, chill, and smooth.<br><br>DAB+ uses a robust modulation designed for radio reception in mobile environments, such as vehicles and public transport.</p>
+            </div>
         </div>
     </main>
-    <footer class="footer">
-        <div class="flex">
-            <img src="digirad2.png" alt="" class="flex">
+        <footer>
+      <div class="footer container py-3">
+        <div class="footer-inner-wraper row">
+
+            <div class="col-12 col-md-4 col-sm-6">
+                <img src="digirad2.png" alt="" class="m-auto w-100" />
+            </div>
+    
+          <div class="social-links d-flex col-12 col-md-4 col-sm-6 flex-column">
+            <h3><strong>Connect To Us</strong></h3>
+            
+            <div class="link-icon d-flex mx-auto">
+                <a href="https://www.facebook.com/your_page_url" target="_blank">
+                  <i class="fa fa-facebook"></i>
+                </a>
+        
+                <a href="https://www.instagram.com/your_page_url" target="_blank">
+                  <i class="fa fa-instagram"></i>
+                </a>
+        
+                <a href="https://www.twitter.com/your_page_url" target="_blank">
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a href="https://www.twitter.com/your_page_url" target="_blank">
+                  <i class="fa fa-youtube"></i>
+                </a>
+            </div>
+            </div>         
+            
+            <div class="sponsors d-flex col-12 col-md-4 col-sm-6 flex-column">
+                <h3><strong>Our Sponsors</strong></h3>
+                <a href="">Sponsor no. 1</a>
+                <a href="">Sponsor no. 2</a>
+                <a href="">Sponsor no. 3</a>
+                <a href="">Sponsor no. 4</a>
+            </div>
         </div>
-        <div class="social-links">
-            <a href="https://www.facebook.com" target="_blank" class="social-link facebook">
-                <i class="material-icons">facebook</i>
-            </a>
-            <a href="https://www.twitter.com" target="_blank" class="social-link twitter">
-                <i class="material-icons">twitter</i>
-            </a>
-            <a href="https://www.instagram.com" target="_blank" class="social-link instagram">
-                <i class="material-icons">instagram</i>
-            </a>
-            <a href="https://www.reddit.com" target="_blank" class="social-link reddit">
-                <i class="material-icons">reddit</i>
-            </a>
-        </div>
-        <p>&copy; 2023 Your Company Name. All rights reserved. | Website designed by <a href="https://www.example.com" target="_blank">Your Name</a></p>
+        <p class="py-3">
+          <strong
+            >&copy; 2023 DigiRad. All rights reserved. | Website designed by
+            <a href="https://www.example.com" target="_blank"
+              >KII Technologies</a></strong
+          >
+        </p>
+      </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src = 'index.js'></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="index.js"></script>
 </body>
 </html>
