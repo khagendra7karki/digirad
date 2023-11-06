@@ -71,7 +71,9 @@ div.gallery-item{
   box-shadow: 5px 5px 5px rgba( 0, 0, 0, 0.5);  
 }
 .gallery-wraper p{
+  margin: 0;
   text-align: center;
+  padding: 10px 0;
 }
 
 div.gallery-item:hover{
@@ -175,7 +177,7 @@ td {
 .contact-card {
   padding: 1rem;
   border-top: 2px solid #bbb;
-  border-bottom:2px solid #bbb;
+  /* border-bottom:2px solid #bbb; */
   gap: 2rem;
 }
 
@@ -207,6 +209,10 @@ td {
   width: 100%;
 }
 
+.usersubmit{
+  display: flex;
+  justify-content: center;
+}
 .usersubmit input {
   background-color: #f25;
   color: white;
@@ -265,6 +271,7 @@ text-align: center;
 }
 
 
+
 .footer a {
 color: #fff;
 text-decoration: none;
@@ -279,7 +286,9 @@ display: flex;
 justify-content: center;
 }
 
-
+.footer p{
+  margin: 0;
+}
 .fa{
   font-size: 30px;
   margin: 0px 10px;

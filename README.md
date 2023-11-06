@@ -8,3 +8,12 @@ Here are some glimpse of the webpages
 
 ## GALLERY
 ![Digirad website gallery page](gallery.png)
+
+## SHOWS
+![Digirad website shows page](shows.png)
+
+## ABOUT
+![Digirad website abouts page](about.png)
+
+## CONTACT
+![Digirad website conntac page](contact.png)
